@@ -1,11 +1,11 @@
 # Horizon
 
-[![Build Status](https://travis-ci.org/stellar/horizon.svg)](https://travis-ci.org/stellar/horizon)
-[![Code Climate](https://codeclimate.com/github/stellar/horizon/badges/gpa.svg)](https://codeclimate.com/github/stellar/horizon)
+[![Build Status](https://travis-ci.org/payshares/horizon.svg)](https://travis-ci.org/payshares/horizon)
+[![Code Climate](https://codeclimate.com/github/payshares/horizon/badges/gpa.svg)](https://codeclimate.com/github/payshares/horizon)
 
 *NOTE: Horizon is in very active development*
 
-Horizon is the [client facing API](http://docs.stellarhorizon.apiary.io) server for the Stellar ecosystem.  See [an overview of the Stellar ecosystem](https://www.stellar.org/galaxy/getting-started/) for more details.
+Horizon is the [client facing API](http://payshareshorizon.docs.apiary.io) server for the Stellar ecosystem.  See [an overview of the Payshares ecosystem](https://payshares.org/galaxy/getting-started/) for more details.
 
 ## Goals
 
@@ -19,9 +19,9 @@ early planning/hacking.
 ## Related documents
 
 - See [doc/readme.md](doc/readme.md) for an introduction.
-- See http://docs.stellarhorizon.apiary.io for the API documention.
+- See http://payshareshorizon.doc.apiary.io for the API documention.
 - See [doc/developing.md](doc/developing.md) for details on how to setup a development environment for working on horizon.
-- See [doc/horizon.apib](doc/horizon.apib) for the [API Blueprint](https://apiblueprint.org/) of the API.
+- See [apiary.apib](apiary.apib) for the [API Blueprint](https://apiblueprint.org/) of the API.
 
 ## Contributing
 
