@@ -1,7 +1,6 @@
 # Horizon
 
 [![Build Status](https://travis-ci.org/payshares/horizon.svg)](https://travis-ci.org/payshares/horizon)
-[![Code Climate](https://codeclimate.com/github/payshares/horizon/badges/gpa.svg)](https://codeclimate.com/github/payshares/horizon)
 
 *NOTE: Horizon is in very active development*
 
