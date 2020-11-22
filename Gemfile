@@ -5,10 +5,10 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'aasm', '~> 4.0.8'
 gem 'metriks', '~> 0.9.9.7'
-gem 'xdr'
-# gem 'xdr', path: "../ruby-xdr", require: false
-gem 'payshares-base', require: false
-# gem 'payshares-base', path: "../ruby-payshares-base", require: false
+# gem 'xdr'
+gem 'xdr', path: "../ruby-xdr", require: false
+# gem 'payshares-base', require: false
+gem 'payshares-base', path: "../ruby-payshares-base", require: false
 gem 'faraday'
 gem 'faraday_middleware'
 gem 'composite_primary_keys', '~> 7.0.13'
