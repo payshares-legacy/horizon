@@ -7,8 +7,8 @@ gem 'aasm', '~> 4.0.8'
 gem 'metriks', '~> 0.9.9.7'
 gem 'xdr'
 # gem 'xdr', path: "../ruby-xdr", require: false
-gem 'stellar-base', require: false
-# gem 'stellar-base', path: "../ruby-stellar-base", require: false
+gem 'payshares-base', require: false
+# gem 'payshares-base', path: "../ruby-payshares-base", require: false
 gem 'faraday'
 gem 'faraday_middleware'
 gem 'composite_primary_keys', '~> 7.0.13'
@@ -57,5 +57,5 @@ group :test, :development do
   gem 'yard'
   gem 'apiaryio'
   gem 'timecop'
-  gem 'stellar_core_commander', ">= 0.0.2", require: false
+  gem 'payshares_core_commander', ">= 0.0.2", require: false
 end

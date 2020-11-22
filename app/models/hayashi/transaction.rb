@@ -17,19 +17,19 @@ class Hayashi::Transaction < Hayashi::Base
 
   def envelope
     raw_envelope = Convert.from_base64(self.txbody)
-    Stellar::TransactionEnvelope.from_xdr(raw_envelope)
+    Payshares::TransactionEnvelope.from_xdr(raw_envelope)
   end
   memoize :envelope
 
   def result_pair
     raw_result = Convert.from_base64(self.txresult)
-    Stellar::TransactionResultPair.from_xdr(raw_result)
+    Payshares::TransactionResultPair.from_xdr(raw_result)
   end
   memoize :result_pair
 
   def meta
     raw_meta = Convert.from_base64(self.txmeta)
-    Stellar::TransactionMeta.from_xdr(raw_meta)
+    Payshares::TransactionMeta.from_xdr(raw_meta)
   end
   memoize :meta
 
@@ -60,7 +60,7 @@ class Hayashi::Transaction < Hayashi::Base
   def participants
     # get all entries with type of "account"
     account_entries = meta.entries.
-      select{|e| e.value.type == Stellar::LedgerEntryType.account }
+      select{|e| e.value.type == Payshares::LedgerEntryType.account }
 
     # extract the account id from each (both live and dead
     # entries expose it through `account_id`)

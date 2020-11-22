@@ -25,18 +25,18 @@ namespace :db do
 
     scenarios = Dir["spec/fixtures/scenarios/*.rb"]
     FileUtils.mkdir_p "tmp/scenarios"
-    require 'stellar_core_commander'
+    require 'payshares_core_commander'
     
-    stellar_core_path = `which stellar-core`.strip
-    raise "stellar-core is not on PATH" unless $?.success?
+    payshares_core_path = `which payshares-core`.strip
+    raise "payshares-core is not on PATH" unless $?.success?
 
-    cmd = StellarCoreCommander::Commander.new stellar_core_path
+    cmd = PaysharesCoreCommander::Commander.new payshares_core_path
     cmd.cleanup_at_exit!    
 
     scenarios.each do |path|
       scenario_name = File.basename(path, ".rb")
       process    = cmd.make_process
-      transactor = StellarCoreCommander::Transactor.new(process)
+      transactor = PaysharesCoreCommander::Transactor.new(process)
 
       process.run
       process.wait_for_ready
@@ -44,7 +44,7 @@ namespace :db do
       transactor.run_recipe path
       transactor.close_ledger
 
-      # dump the stellar-core data
+      # dump the payshares-core data
       IO.write("tmp/scenarios/#{scenario_name}-core.sql", process.dump_database)
 
       # clear horizon

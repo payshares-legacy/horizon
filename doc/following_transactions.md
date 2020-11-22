@@ -1,6 +1,6 @@
 # Following Transactions On An Account
 
-Let's describe a normal scenario for a gateway:  The gateway will have a central account into which their user's will send credits such that the user can later withdraw physical money from the gateway.  To facilitate this, the gateway will run an application that watches their gateway account for transactions in which it is a participant.  Each time the application detects a new transaction, it will interpret the results and perhaps update an internal database to reflect the deposit from the Stellar Network.
+Let's describe a normal scenario for a gateway:  The gateway will have a central account into which their user's will send credits such that the user can later withdraw physical money from the gateway.  To facilitate this, the gateway will run an application that watches their gateway account for transactions in which it is a participant.  Each time the application detects a new transaction, it will interpret the results and perhaps update an internal database to reflect the deposit from the Payshares Network.
 
 ## Process Overview
 

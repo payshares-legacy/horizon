@@ -1,5 +1,5 @@
 # 
-# Friendbot is your friendly neighborhood stellar faucet.  It will
+# Friendbot is your friendly neighborhood payshares faucet.  It will
 # sign and send transactions at the request of anyone, when given a secret seed.
 # 
 # NOTE: This functionality should not remain in within horizon.  We're including
@@ -27,15 +27,15 @@ class Friendbot
   end
 
   def initialize(seed)
-    @keypair = Stellar::KeyPair.from_seed seed
+    @keypair = Payshares::KeyPair.from_seed seed
   end
 
   def pay(address)
     refresh_sequence_number if @sequence.blank?
 
-    destination = Stellar::KeyPair.from_address address
+    destination = Payshares::KeyPair.from_address address
 
-    tx = Stellar::Transaction.payment({
+    tx = Payshares::Transaction.payment({
       account:     @keypair,
       destination: destination,
       sequence:    @sequence + 1,

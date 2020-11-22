@@ -18,7 +18,7 @@ class Hayashi::Account < Hayashi::Base
   memoize :all_signer_key_pairs
 
   def key_pair
-    Stellar::KeyPair.from_address(accountid)
+    Payshares::KeyPair.from_address(accountid)
   end
 
   def balances

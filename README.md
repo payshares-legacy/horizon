@@ -4,7 +4,7 @@
 
 *NOTE: Horizon is in very active development*
 
-Horizon is the [client facing API](http://payshareshorizon.docs.apiary.io) server for the Stellar ecosystem.  See [an overview of the Payshares ecosystem](https://payshares.org/galaxy/getting-started/) for more details.
+Horizon is the [client facing API](http://payshareshorizon.docs.apiary.io) server for the Payshares ecosystem.  See [an overview of the Payshares ecosystem](https://payshares.org/galaxy/getting-started/) for more details.
 
 ## Goals
 

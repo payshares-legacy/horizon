@@ -5,6 +5,6 @@ class Hayashi::Signer < Hayashi::Base
   belongs_to :account, class_name: "Hayashi::Account", foreign_key: :accountid
 
   def key_pair
-    Stellar::KeyPair.from_address(publickey)
+    Payshares::KeyPair.from_address(publickey)
   end
 end

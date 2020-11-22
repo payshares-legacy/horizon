@@ -8,16 +8,16 @@ class TransactionSubmission
     :malformed,
 
     # the hash for this transaction hash is either in the history database
-    # or is in the stellar core database
+    # or is in the payshares core database
     :already_finished,
 
-    # the transaction was submitted and received by stellar core
+    # the transaction was submitted and received by payshares core
     :received,
 
-    # the submission to stellar core failed, and was not recieved by the network
+    # the submission to payshares core failed, and was not recieved by the network
     :failed,
 
-    # we could not connect to stellar core and submit the transaction
+    # we could not connect to payshares core and submit the transaction
     :connection_failed
   ]
 
@@ -39,8 +39,8 @@ class TransactionSubmission
   # Process this submission:
   #
   # - pre-validate it
-  # - submit it to stellar core if needed
-  # - interpret the submission to stellar-core to populate the "submission result"
+  # - submit it to payshares core if needed
+  # - interpret the submission to payshares-core to populate the "submission result"
   #
   def process
 
@@ -54,7 +54,7 @@ class TransactionSubmission
       return
     end
 
-    @submission_response = $stellard.get("tx", blob: tx_envelope)
+    @submission_response = $paysharesd.get("tx", blob: tx_envelope)
 
     if received?
       @result = :received
@@ -98,7 +98,7 @@ class TransactionSubmission
 
   def parsed_envelope
     raw = Convert.from_hex(tx_envelope)
-    Stellar::TransactionEnvelope.from_xdr(raw)
+    Payshares::TransactionEnvelope.from_xdr(raw)
   rescue EOFError
     nil
   end

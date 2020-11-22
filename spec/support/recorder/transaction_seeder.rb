@@ -3,20 +3,20 @@ module Recorder
     
     def initialize()
       @recipe_path = "#{SPEC_ROOT}/fixtures/scenarios/base.rb"
-      @output_path = "#{SPEC_ROOT}/fixtures/stellar-core.sql"
-      @stellar_core_path = `which stellar-core`.strip
+      @output_path = "#{SPEC_ROOT}/fixtures/payshares-core.sql"
+      @payshares_core_path = `which payshares-core`.strip
 
-      raise "stellar-core is not on PATH" unless $?.success?
+      raise "payshares-core is not on PATH" unless $?.success?
     end
 
     def run
-      require 'stellar_core_commander'
+      require 'payshares_core_commander'
       VCR.turned_off do
         begin
           WebMock.allow_net_connect!
-          cmd        = StellarCoreCommander::Commander.new @stellar_core_path
+          cmd        = PaysharesCoreCommander::Commander.new @payshares_core_path
           process    = cmd.make_process
-          transactor = StellarCoreCommander::Transactor.new(process)
+          transactor = PaysharesCoreCommander::Transactor.new(process)
 
           # run recipe
           process.run

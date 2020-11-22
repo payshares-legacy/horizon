@@ -1,6 +1,6 @@
-base_url = Rails.application.config.stellard_url
+base_url = Rails.application.config.paysharesd_url
 
-$stellard = Faraday.new(url: base_url) do |conn|
+$paysharesd = Faraday.new(url: base_url) do |conn|
   conn.response :logger, Rails.logger  
   conn.request :url_encoded
   conn.response :json

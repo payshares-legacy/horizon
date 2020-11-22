@@ -7,7 +7,7 @@ RSpec.describe TransactionSubmission, type: :model do
         stub_parsed_transaction_envelope
         transaction_envelope = SecureRandom.hex
         exception = Faraday::ConnectionFailed.new("error")
-        allow($stellard).to receive(:get).and_raise(exception)
+        allow($paysharesd).to receive(:get).and_raise(exception)
         allow(ExceptionReporter).to receive(:capture)
         transaction_submission = TransactionSubmission.new(transaction_envelope)
 
@@ -20,7 +20,7 @@ RSpec.describe TransactionSubmission, type: :model do
 
   def stub_parsed_transaction_envelope
     parsed_envelope = double("parsed_envelope", tx: double(hash: "hash"))
-    allow(Stellar::TransactionEnvelope).to receive(:from_xdr).
+    allow(Payshares::TransactionEnvelope).to receive(:from_xdr).
       and_return(parsed_envelope)
   end
 end

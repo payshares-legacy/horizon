@@ -6,7 +6,7 @@ Bundler.require(*Rails.groups)
 
 Dotenv::Railtie.load
 
-module StellardHayashiApi
+module PaysharesdHayashiApi
   class Application < Rails::Application
 
     # middlewarezez
@@ -33,8 +33,8 @@ module StellardHayashiApi
 
     # custom configs
 
-    config.stellard_url = ENV["STELLARD_URL"]
-    raise "STELLARD_URL environment variable unset" if config.stellard_url.blank?
+    config.paysharesd_url = ENV["PAYSHARESD_URL"]
+    raise "PAYSHARESD_URL environment variable unset" if config.paysharesd_url.blank?
     #
 
     if ENV["CACHE_URL"].present?

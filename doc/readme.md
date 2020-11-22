@@ -2,26 +2,26 @@
 
 *NOTE: Horizon is in very active development*
 
-Horizon is the client facing API server for the Stellar ecosystem.  See [an overview of the Stellar ecosystem](TODO) for more details.
+Horizon is the client facing API server for the Payshares ecosystem.  See [an overview of the Payshares ecosystem](TODO) for more details.
 
 Horizon provides (well, intends to provide when complete) two significant portions of functionality:  The Transactions API and the History API.
 
 ## Transactions API
 
-The Transactions API exists to help you make transactions against the Stellar network.  It provides ways to help you create valid transactions, such as providing an account's sequence number or latest known balances. 
+The Transactions API exists to help you make transactions against the Payshares network.  It provides ways to help you create valid transactions, such as providing an account's sequence number or latest known balances. 
 
 In addition to the read endpoints, the Transactions API also provides the endpoint to submit transactions.
 
 ### Future additions
 
-The current capabilities of the Transactions API does not represent what will be available at the official launch of the new Stellar network.  Notable additions to come:
+The current capabilities of the Transactions API does not represent what will be available at the official launch of the new Payshares network.  Notable additions to come:
 
 - Endpoints to read the current state of a given order book or books to aid in creating offer transactions
 - Endpoints to calculate suitable paths for a payments
 
 ## History API
 
-The History API provides endpoints for retrieving data about what has happened in the past on the Stellar network.  It provides (or will provide) endpoints that let you:
+The History API provides endpoints for retrieving data about what has happened in the past on the Payshares network.  It provides (or will provide) endpoints that let you:
 
 - Retrieve transaction details
 - Load transactions that effect a given account
@@ -67,6 +67,6 @@ While Horizon is lightly self-documenting through use of hyperlinks in responses
 
 We document our API using [API Blueprint](https://apiblueprint.org/), and you can see the raw file [here](horizon.apib).
 
-We host the documentation for our API presently with apiary.  You can find this documentation at (http://docs.stellarhorizon.apiary.io/)
+We host the documentation for our API presently with apiary.  You can find this documentation at (http://docs.payshareshorizon.apiary.io/)
 
 

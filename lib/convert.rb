@@ -21,7 +21,7 @@ module Convert
   end
 
   def base58
-    Stellar::Util::Base58.stellar
+    Payshares::Util::Base58.payshares
   end
 
   extend self

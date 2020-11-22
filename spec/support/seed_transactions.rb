@@ -4,7 +4,7 @@ RSpec.configure do |c|
       Recorder::TransactionSeeder.new.run
     end
 
-    pg_dump = PgDump.new(Hayashi::Base, "#{SPEC_ROOT}/fixtures/stellar-core.sql")
+    pg_dump = PgDump.new(Hayashi::Base, "#{SPEC_ROOT}/fixtures/payshares-core.sql")
     pg_dump.load
   end
 end
