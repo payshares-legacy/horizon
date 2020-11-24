@@ -59,5 +59,6 @@ group :test, :development do
   gem 'yard'
   gem 'apiaryio'
   gem 'timecop'
-  gem 'payshares_core_commander', ">= 0.0.2", require: false
+  # gem 'payshares_core_commander', ">= 0.0.2", require: false
+  gem 'payshares_core_commander', git: 'https://github.com/payshares/payshares_core_commander.git'
 end
