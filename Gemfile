@@ -7,10 +7,10 @@ gem 'aasm', '~> 4.0.8'
 gem 'metriks', '~> 0.9.9.7'
 # gem 'xdr'
 # gem 'xdr', path: "../ruby-xdr", require: false
-gem "xdr", git: "https://github.com/payshares/rubyxdr.git"
+gem 'xdr, git: 'https://github.com/payshares/rubyxdr.git'
 # gem 'payshares-base', require: false
 # gem 'payshares-base', path: "../ruby-payshares-base", require: false
-gem "payshares-base", git: "https://github.com/payshares/ruby-payshares-base.git"
+gem 'payshares-base', git: 'https://github.com/payshares/ruby-payshares-base.git'
 gem 'faraday'
 gem 'faraday_middleware'
 gem 'composite_primary_keys', '~> 7.0.13'
