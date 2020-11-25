@@ -1,4 +1,5 @@
 require 'celluloid'
+require 'celluloid/current'
 require 'sucker_punch'
 Celluloid.logger = Rails.logger
 
