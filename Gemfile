@@ -24,6 +24,8 @@ gem 'rack-cors', :require => 'rack/cors'
 gem 'rails_stdout_logging', group: :production
 gem 'awesome_print'
 gem 'sentry-raven'
+gem 'coderay', '1.1.0'
+gem 'i18n', '0.7.0'
 
 # note: the following celluloid and sucker_punch gems are require: false
 # so that the rspec system can bootup the system manually.
