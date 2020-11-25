@@ -52,7 +52,7 @@ gem 'dotenv-rails', github: "bkeepers/dotenv"
 
 group :test, :development do
   gem 'rspec-rails'
-  gem 'pry-rails'
+  gem 'pry-rails', '0.3.3'
   gem 'shoulda-matchers'
   gem 'guard'
   gem 'guard-rspec'
