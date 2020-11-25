@@ -9,7 +9,7 @@ gem 'metriks', '0.9.9.7'
 gem 'xdr', path: "../ruby-xdr"
 # gem 'xdr', git: 'https://github.com/payshares/ruby-xdr.git'
 # gem 'payshares-base', require: false
-gem 'payshares-base', path: "../ruby-payshares-base"
+gem 'payshares-base', path: "../ruby-payshares-base", require: false
 # gem 'payshares-base', git: 'https://github.com/payshares/ruby-payshares-base.git'
 gem 'faraday', '0.9.1'
 gem 'faraday_middleware', '0.9.1'
