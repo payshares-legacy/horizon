@@ -13,7 +13,7 @@ gem 'payshares-base', path: "../ruby-payshares-base", require: false
 # gem 'payshares-base', git: 'https://github.com/payshares/ruby-payshares-base.git'
 gem 'faraday', '0.9.1'
 gem 'faraday_middleware', '0.9.1'
-gem 'composite_p  rimary_keys', '7.0.13'
+gem 'composite_primary_keys', '7.0.13'
 gem 'memoist', '0.11.0'
 gem 'backports', '3.6.4'
 gem 'json_expressions', '0.8.3'
