@@ -33,7 +33,7 @@ gem 'celluloid', require: false
 gem 'sucker_punch', require: false
 
 # sql gems
-gem 'pg'
+gem 'pg', '0.18.1'
 gem 'sqlite3'
 
 #memcached
