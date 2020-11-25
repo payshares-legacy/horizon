@@ -6,10 +6,10 @@ gem 'sdoc', '0.4.1', group: :doc
 gem 'aasm', '4.0.8'
 gem 'metriks', '0.9.9.7'
 # gem 'xdr'
-gem 'xdr', path: "../ruby-xdr"
+gem 'xdr', path: '../ruby-xdr', require: false
 # gem 'xdr', git: 'https://github.com/payshares/ruby-xdr.git'
 # gem 'payshares-base', require: false
-gem 'payshares-base', path: "../ruby-payshares-base", require: false
+gem 'payshares-base', path: '../ruby-payshares-base', require: false
 # gem 'payshares-base', git: 'https://github.com/payshares/ruby-payshares-base.git'
 gem 'faraday', '0.9.1'
 gem 'faraday_middleware', '0.9.1'
@@ -47,7 +47,7 @@ gem 'memcached', require: 'memcached'
 gem 'puma', '2.11.1'
 
 # dotenv-rails version 1.0.2
-gem 'dotenv-rails', github: "bkeepers/dotenv"
+gem 'dotenv-rails', github: 'bkeepers/dotenv'
 
 group :test, :development do
   gem 'rspec-rails', '3.2.1'
@@ -66,7 +66,7 @@ group :test, :development do
   gem 'yard', '0.8.7.6'
   gem 'apiaryio', '0.2.0'
   gem 'timecop', '0.7.3'
-  # gem 'payshares_core_commander', ">= 0.0.2", require: false
+  # gem 'payshares_core_commander', '>= 0.0.2', require: false
   # gem 'payshares_core_commander', git: 'https://github.com/payshares/payshares_core_commander.git'
-  gem 'payshares_core_commander', path: "../payshares_core_commander", require: false
+  gem 'payshares_core_commander', path: '../payshares_core_commander', require: false
 end
