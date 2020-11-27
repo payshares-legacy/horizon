@@ -5,9 +5,9 @@ gem 'jbuilder', '2.2.8'
 gem 'sdoc', '0.4.1', group: :doc
 gem 'aasm', '4.0.8'
 gem 'metriks', '0.9.9.7'
-# gem 'xdr'
-# gem 'xdr', path: '../ruby-xdr', require: false
-gem 'xdr', git: 'https://github.com/payshares/ruby-xdr.git'
+# gem 'payshares-xdr'
+# gem 'payshares-xdr', path: '../ruby-xdr', require: false
+gem 'payshares-xdr', git: 'https://github.com/payshares/ruby-payshares-xdr.git'
 # gem 'payshares-base', require: false
 # gem 'payshares-base', path: '../ruby-payshares-base', require: false
 gem 'payshares-base', git: 'https://github.com/payshares/ruby-payshares-base.git'
